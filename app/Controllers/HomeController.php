@@ -39,7 +39,7 @@ class HomeController extends BaseController
     // Set the Artist on array albumsList
     for ($i = 0; $i < count($albumsList); $i++) { 
       foreach ($artistList as $artist) {
-        if (intval($albumsList[$i]['id']) === $artist['id']) {
+        if (intval($albumsList[$i]['artist_id']) === $artist['id']) {
           $albumsList[$i]['artist_name'] = $artist['name'];
         }
       }
