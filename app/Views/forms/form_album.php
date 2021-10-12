@@ -59,6 +59,7 @@
         <!-- Btn send -->
         <div class="row center">
           <button type="submit" class="btn waves-effect-waves-light green">save</button>
+          <a href="<?php echo base_url('/dashboard')?>" class="btn waves-effect-waves-light red">Cancel</a>
         </div>
       </div>
       <?php echo form_close()?>
