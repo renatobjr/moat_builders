@@ -25,7 +25,7 @@
               <select name="artist_id" id="artist_id">
                 <option value="" disabled selected>Choose an Artist</option>
                 <?php foreach ($artistList as $artist) : ?>
-                  <option value="<?php echo $artist['id'] ?>" <?php if (isset($dataAlbum['id']) && $artist['id'] == $dataAlbum['id']) : ?> selected="selected" <?php endif; ?>>
+                  <option value="<?php echo $artist['id'] ?>" <?php if (isset($dataAlbum['artist_id']) && $artist['id'] == $dataAlbum['artist_id']) : ?> selected="selected" <?php endif; ?>>
                     <?php echo $artist['name'] ?>
                   </option>
                 <?php endforeach ?>
